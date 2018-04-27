@@ -1,0 +1,102 @@
+\documentclass{article}
+
+% set font encoding for PDFLaTeX or XeLaTeX
+\usepackage{ifxetex}
+\ifxetex
+  \usepackage{fontspec}
+\else
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+  \usepackage{graphicx}
+  \usepackage{float}
+\fi
+
+% used in maketitle
+\title{
+        \begin{center}
+        \includegraphics[width=8cm]{Unison.png}
+        \end{center}
+        \newline       
+        Reporte Evaluación 2.- Animación del Atractor de Lorentz}
+\author{José Burruel}
+\date{26/Abril/2018}
+
+% Enable SageTeX to run SageMath code right inside this LaTeX file.
+% documentation: http://mirrors.ctan.org/macros/latex/contrib/sagetex/sagetexpackage.pdf
+% \usepackage{sagetex}
+
+\begin{document}
+\newpage
+\maketitle
+\section{Introducción}
+El atractor de Lorenz es un concepto introducido por Edward Lorenz en 1963. Se trata de un sistema dinámico determinista tridimensional no lineal derivado de ecuaciones simplificadas de rollos de transferencia de calor que se producen en las ecuaciones dinámicas de la atmósfera.
+
+\section{Desarrollo}
+Lo que se hizo fue tomar como base el repositorio en GitHub de Geoff Boeing de su cálculo y solución del Sistema de Atractor de Lorentz y editarlo para poder visualizar y animar el comportamiento de dicho concepto, asó también graficamos la evolución de cada variable conforme al tiempo.
+
+\section{Resultados}
+\subsection{Sigma = 10, Beta = 8/3, Rho = 28}
+
+\begin{figure}[H]
+\includegraphics[width=\linewidth]{Atractror1.png}
+\caption{Atractor de Lorentz, gráfica 3D (10, 8/3, 28)}
+\end{figure}
+
+\begin{figure}[H]
+\includegraphics[width=\linewidth]{Planos1.png}
+\caption{Vista bidimensional de cada plano ortogonal}
+\end{figure}
+
+\begin{figure}[H]
+\includegraphics[width=\linewidth]{Evolucion1.png}
+\caption{Evolución de cada variable con el tiempo}
+\end{figure}
+
+\subsection{Sigma = 28, Beta = 4, Rho = 46.92}
+
+\begin{figure}[H]
+\includegraphics[width=\linewidth]{Atractor2.png}
+\caption{Atractor de Lorentz, gráfica 3D (28, 4, 46.92)}
+\end{figure}
+
+\begin{figure}[H]
+\includegraphics[width=\linewidth]{Planos2.png}
+\caption{Vista bidimensional de cada plano ortogonal.}
+\end{figure}
+
+\begin{figure}[H]
+\includegraphics[width=\linewidth]{Evolucion2.png}
+\caption{Evolución de cada variable con el tiempo}
+\end{figure}
+
+\subsection{Sigma = 10, Beta = 8/3, Rho = 99.92}
+
+\begin{figure}[H]
+\includegraphics[width=\linewidth]{Atractor3.png}
+\caption{Atractor de Lorentz, vista 3D (10, 8/3, 99.92)}
+\end{figure}
+
+\begin{figure}[H]
+\includegraphics[width=\linewidth]{Planos3.png}
+\caption{Vista bidimensional de cada plano.}
+\end{figure}
+
+\begin{figure}[H]
+\includegraphics[width=\linewidth]{Evolucion3.png}
+\caption{Evolución de cada variable con respecto al tiempo.}
+\end{figure}
+
+\section{Comparación}
+Sabemos que el atractor de Lorentz es un modelo de Tería del Caos, por lo que si movemos alguna variable, todo el sistema se ve afectado y cambia su forma. Y como hemos podido apreciar, cada sistema cambia bastante su vista con unos pequeños cambios en las condiciones iniciales. 
+El segundo sistema se ve más tormentoso que el primero, con más fluctuaciones que el primero, y el tercero tiene una nnaturaleza más extraña pero menos movida que los otros dos, sin embargo, el tamaño del ultimo es más grande que los anteriores.
+
+\section{Animaciones del Atractor de Lorentz}
+Para poder apreciar dichas animaciones de la evolución del Atractor visita el repositorio de Github de Geoff Boeing en https://github.com/gboeing/lorenz-system o mi repositorio en GitHub basando en el de Geoff en https://github.com/GravityBuma
+
+\newpage
+
+\section[Profe, pongame 100]
+Por favor.
+
+\end{document}
